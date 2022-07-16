@@ -1,0 +1,120 @@
+:root{
+    --main-clr:#208A5D;
+    --alt-clr:#394B41;
+    --third-clr:#00538B;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f5ef;
+}
+.cart{
+    position: absolute;
+    right: 2rem;
+    top:1.8rem;
+    padding: 0.4rem 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    color: var(--main-clr);
+}
+.product-container{
+    display: flex;
+    gap: 2rem;
+}
+.product-display{
+    padding:1.7rem;
+}
+.product-image{
+width:40%;
+
+
+}
+.product-image img{
+    width:100%;
+}
+.product-info{
+position: relative;
+width: 40%;
+padding: .4rem;
+}
+.product-info h1{
+    color: var(--main-clr);
+}
+.product-info p{
+    color: var(--third-clr);
+    font-weight: bold;
+}
+.product-info ul li{
+    margin:0.2rem auto 0.1rem 1.5rem;
+    color: var(--main-clr);
+}
+.color-circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid var(--alt-clr);
+    margin: 0.4rem;
+    display: inline-block;
+}
+.product-info button{
+position: absolute;
+bottom: 2rem;
+left: 0;
+width: 50%;
+background-color: var(--main-clr);
+   color: #fff;
+   transition: 0.3s;
+}
+.product-info button:hover{
+    background-color: var(--alt-clr);
+}
+.btn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.4rem 1.1rem;
+    cursor: pointer;
+}
+ form{
+    margin-top: 1rem;
+    display: flex;
+    padding: 0.7rem;
+    width: 40%;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 4px .2px;
+    border-radius: 5px;
+}
+form input,textarea,select{
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.3rem;
+    margin: 0.3rem 0;
+    color: #777;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+form h3{
+    color: var(--main-clr);
+    margin: auto;
+}
+form label{
+    color: var(--alt-clr);
+}
+form input[type="submit"]{
+    background-color: var(--third-clr);
+    color: #eee;
+}
+.review-container{
+    margin: 1rem 0;
+    width: 40%;
+}
+.review-container h3{
+    color: var(--main-clr);
+    border-bottom: 1px solid var(--third-clr);
+}
+.review-container li{
+    color: #777;
+}
